@@ -1,0 +1,20 @@
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+int main(){
+	int n, resultado=0;
+	cout<<"Digite un numero: ";cin>>n;
+	
+	for(int i=1;i<=n;i++){
+		if(i%2==0){
+		resultado -= i;
+	}else {
+		resultado += i;
+	}
+	}
+	
+	cout<<"\nEl resultado es: "<<resultado<<endl;
+	
+	system("pause");
+	return 0;
+}
